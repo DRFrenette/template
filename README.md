@@ -7,14 +7,13 @@ Boilerplate for my Rails 4 projects.
 ## Back-End
 1. Rails 4.2
 1. PostgreSQL
-1. rspec/capybara/factory_girl/faker/[shoulda](https://github.com/thoughtbot/shoulda)/vcr
-1. capistrano 3.3.x (nginx/passenger)
+1. rspec/capybara/factory_girl/guard/[shoulda](https://github.com/thoughtbot/shoulda)
 
 ## Front-End
 1. twitter-bootstrap-rails
 1. font-awesome-rails
-1. jquery-ui-sass-rails
-1. jquery-ui-sass-rails
+1. jquery-datatables
+1. jquery-validation-plugin
 
 Also, no Coffeescript (I like my scripts in vanilla js).
 
@@ -33,3 +32,12 @@ Rename these to match your app's name:
 - The session store key name in ./config/initializers/session_store.rb.
 - The main layout's title in ./app/views/layouts/application.html.erb.
 - Database name/username/passwords/etc. in config/database.yml.
+
+## Guard
+
+Guard is included, which has
+[guard-rails](https://github.com/ranmocy/guard-rails),
+[guard-rspec](https://github.com/guard/guard-rspec) and
+[guard-livereload](https://github.com/guard/guard-livereload). Start the app by
+typing ```guard```.
+
