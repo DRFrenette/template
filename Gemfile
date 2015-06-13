@@ -33,3 +33,18 @@ group :production do
   gem 'rails_12factor'
   gem 'unicorn'
 end
+
+group :development, :test do
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'guard-rspec'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'shoulda-matchers'
+  gem 'ruby-progressbar', '~> 1.5.1'
+  gem 'pry-nav'
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
+end
